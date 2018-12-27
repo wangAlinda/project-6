@@ -18,7 +18,7 @@
     overflow: hidden;
 }
 
-@mixin center($center) {
+@mixin center($center:center) {
     text-align: $center;
 }
 
@@ -35,7 +35,7 @@
     flex-direction: $dir;
 }
 
-@mixin flexWrap ($wrap) {
+@mixin flexWrap ($wrap:wrap) {
     -webkit-flex-wrap: $wrap;
     flex-wrap: $wrap;
 }
