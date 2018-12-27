@@ -24,7 +24,11 @@
 
 .icon-bofang:before { content: "\f004c"; }
 
+<<<<<<< HEAD
 .icon-fenxiang:before { content: "\e62e"; }
+=======
+.icon-fenxiang:before { content: "\e62e"; } 
+>>>>>>> 126d5ff5583a31544aae43da35045fc923fbae30
 
 .icon-fenxiang1:before { content: "\e628"; }
 

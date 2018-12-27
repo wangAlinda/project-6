@@ -221,6 +221,7 @@ body {
   box-sizing: border-box;
   z-index: 9999;
   color: #fff;
+  background: pink;
 }
 
 .wrapper header .icon:nth-child(1) {
@@ -268,6 +269,137 @@ body {
 .wrapper section .bannerImg img {
   width: 100%;
   height: 100%;
+}
+
+.wrapper section .list {
+  padding: 0 0.4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.wrapper section .list dl {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.wrapper section .list dl dd {
+  text-align: center;
+}
+
+.wrapper section .list dl dd:hover {
+  color: red;
+}
+
+.wrapper section .content {
+  width: 100%;
+  padding: 0.4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 0.13333rem solid #eee;
+}
+
+.wrapper section .content h3 {
+  height: 0.93333rem;
+  line-height: 0.85333rem;
+  font-size: 0.42667rem;
+  color: brown;
+}
+
+.wrapper section .content .cont {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.wrapper section .content .cont dl {
+  margin: 0.26667rem 0;
+  width: 30%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.wrapper section .content .cont dl dt {
+  width: 100%;
+}
+
+.wrapper section .content .cont dl dt img {
+  width: 100%;
+  display: block;
+}
+
+.wrapper section .content .cont dl dd {
+  line-height: 0.8rem;
+}
+
+.wrapper section .content .cont dl dd:hover {
+  color: red;
+}
+
+.wrapper section .hot {
+  padding: 0.4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper section .hot h3 {
+  height: 0.93333rem;
+  line-height: 0.93333rem;
+  font-size: 0.42667rem;
+  color: brown;
+}
+
+.wrapper section .hot .cont {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  overflow-x: auto;
+  margin: 0.26667rem 0;
+}
+
+.wrapper section .hot .cont dl {
+  width: 30%;
+  margin: 0 0.26667rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.wrapper section .hot .cont dl dd:hover {
+  color: red;
 }
 
 .wrapper footer {
