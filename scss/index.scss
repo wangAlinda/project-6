@@ -19,13 +19,22 @@ body {
         @include flex;
         overflow-y: auto;
         .list {
-            padding: 0 pxTorem(15px);
+            border-bottom: pxTorem(5px) solid #eee;
+            padding: pxTorem(15px) 0;
+            @include flexWrap;
             @include sizing;
             @include box_flex;
             @include justify(space-between);
             dl {
+                width: 25%;
+                margin: pxTorem(5px) 0;
                 @include box_flex;
+                @include justify(space-between);
                 @include direction(column);
+                dt {
+                    @include box_flex;
+                    @include justify;
+                }
                 dd {
                     @include center;
                     &:hover {
