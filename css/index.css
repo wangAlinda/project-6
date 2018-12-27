@@ -200,19 +200,78 @@ body {
   flex-direction: column;
 }
 
-.wrapper header {
+header {
   width: 100%;
-  height: 30%;
-  background: pink;
+  height: 1.17333rem;
+  position: absolute;
+  left: 0;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 9999;
+  color: #fff;
 }
 
-.wrapper section {
+header .icon:nth-child(1) {
+  font-size: 0.48rem;
+}
+
+header .top {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+header .top li {
+  width: 1.33333rem;
+  height: 1.12rem;
+  line-height: 1.12rem;
+  text-align: center;
+  font-size: 0.42667rem;
+}
+
+header .top li.active {
+  border-bottom: solid 2px #ccc;
+}
+
+header .icon:nth-child(3) {
+  font-size: 0.48rem;
+}
+
+section {
+  width: 100%;
   -webkit-flex: 1 1 0%;
   flex: 1 1 0%;
   overflow-y: auto;
 }
 
-.wrapper footer {
+section .banner {
+  width: 100%;
+  height: pxTore(376px);
+}
+
+section .banner img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
   width: 100%;
   height: 6%;
   background: skyblue;

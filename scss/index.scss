@@ -11,18 +11,59 @@ body {
     height: 100%;
     @include box_flex;
     @include direction(column);
-    header {
+}
+
+header {
+    width: 100%;
+    height: pxTorem(44px);
+    position: absolute;
+    left: 0;
+    @include box_flex;
+    @include justify(space-between);
+    @include align;
+    padding: 0 pxTorem(10px);
+    @include sizing;
+    z-index: 9999;
+    color: #fff;
+    .icon:nth-child(1) {
+        font-size: pxTorem(18px);
+    }
+    .top {
+        @include box_flex;
+        @include justify;
+        @include align;
+        li {
+            width: pxTorem(50px);
+            height: pxTorem(42px);
+            line-height: pxTorem(42px);
+            text-align: center;
+            font-size: pxTorem(16px);
+        }
+        li.active {
+            border-bottom: solid 2px #ccc;
+        }
+    }
+    .icon:nth-child(3) {
+        font-size: pxTorem(18px);
+    }
+}
+
+section {
+    width: 100%;
+    @include flex;
+    overflow-y: auto;
+    .banner {
         width: 100%;
-        height: 30%;
-        background: pink;
+        height: pxTore(376px);
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
-    section {
-        @include flex;
-        overflow-y: auto;
-    }
-    footer {
-        width: 100%;
-        height: 6%;
-        background: skyblue;
-    }
+}
+
+footer {
+    width: 100%;
+    height: 6%;
+    background: skyblue;
 }
