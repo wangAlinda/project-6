@@ -19,10 +19,45 @@ body {
     section {
         @include flex;
         overflow-y: auto;
+        .options {
+            width: 100%;
+            height: auto;
+            h3 {
+                font-size: pxTorem(17px);
+                font-weight: 600;
+                margin: pxTorem(10px) 0;
+            }
+            dl {
+                @include box_flex;
+                border-bottom: pxTorem(1px) solid #eee;
+                margin-bottom: pxTorem(10px);
+                padding: pxTorem(5px) 0;
+                @include sizing;
+                dt {
+                    margin-right: pxTorem(10px);
+                }
+                dd {
+                    p {
+                        font-size: pxTorem(16px);
+                        margin-bottom: pxTorem(5px);
+                    }
+                }
+            }
+        }
     }
     footer {
         width: 100%;
         height: 6%;
-        background: skyblue;
+        @include box_flex;
+        @include justify(space-around);
+        border-top: pxTorem(1px) solid #666;
+        dl {
+            @include flex;
+            height: 100%;
+            @include box_flex;
+            @include direction(column);
+            @include justify;
+            @include align;
+        }
     }
 }
