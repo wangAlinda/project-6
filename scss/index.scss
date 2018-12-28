@@ -22,7 +22,6 @@
             padding: 0 pxTorem(10px);
             @include sizing;
             z-index: 9999;
-            color: #fff;
             .icon:nth-child(1) {
                 font-size: pxTorem(18px);
             }
@@ -44,7 +43,6 @@
             .icon:nth-child(3) {
                 font-size: pxTorem(18px);
             }
-            background: pink;
         }
         section {
             @include flex;
@@ -140,6 +138,5 @@
         footer {
             width: 100%;
             height: pxTorem(55px);
-            background: skyblue;
         }
     }
